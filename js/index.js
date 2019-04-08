@@ -62,3 +62,14 @@ headerText.textContent = siteContent.cta.h1;
 let headerButton = document.querySelector('.cta-text button');
 headerButton.textContent = siteContent.cta.button;
 
+let featuresHeader = document.querySelector('.main-content .top-content:first-child h4');
+featuresHeader.textContent = siteContent['main-content']['features-h4'];
+
+let featuresText = document.querySelector('.main-content .top-content:first-child p');
+featuresText.textContent = siteContent['main-content']['features-content'];
+
+let aboutHeader = document.querySelector('.top-content .text-content:last-child h4');
+aboutHeader.textContent = siteContent['main-content']['about-h4'];
+
+let aboutText = document.querySelector('.top-content .text-content:last-child p');
+aboutText.textContent = siteContent['main-content']['about-content'];
