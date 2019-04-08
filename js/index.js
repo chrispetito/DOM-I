@@ -136,3 +136,17 @@ contactEmail.textContent = siteContent['contact']['email'];
 //footer (copyright)
 let footerText = document.querySelector('footer p');
 footerText.textContent = siteContent['footer']['copyright'];
+
+let pricingNav = document.createElement("a");
+let pricingText = document.createTextNode("Pricing");
+pricingNav.appendChild(pricingText);
+document.querySelector("nav").appendChild(pricingNav); 
+pricingNav.style.color = 'green';
+pricingNav.href = '#';
+
+let homeNav = document.createElement("a");
+let homeText = document.createTextNode("Home");
+homeNav.appendChild(homeText);
+document.querySelector("nav").prepend(homeNav); 
+homeNav.style.color = 'green';
+homeNav.href = '#';
